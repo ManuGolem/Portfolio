@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Excalifont";
+    src: url("Excalifont-Regular.woff2");
+}
+
 @theme {
     --color-fondo: #282828;
-    --color-foreground: #ebdbb2;
+    --color-sobremi: #fbf1c7;
+    --color-proyecto: #ebdbb2;
     --color-fondoOscuro: #1d2021;
     --color-naranja: #d65d0e;
     --color-aqua: #689d6a;
+}
+
+* {
+    font-family: "Excalifont", ui-sans-serif;
 }
