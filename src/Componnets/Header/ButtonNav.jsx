@@ -1,9 +1,12 @@
-export function ButtonNav({ text }) {
+export function ButtonNav({ text, link }) {
     return (
-        <li>
-            <button className="hover:cursor-pointer hover:[scale:1.1] hover:text-naranja transition-all">
+        <li className="hover:[scale:1.1] ">
+            <a
+                href={link}
+                className="hover:cursor-pointer hover:text-naranja transition-all"
+            >
                 {text}
-            </button>
+            </a>
         </li>
     );
 }
