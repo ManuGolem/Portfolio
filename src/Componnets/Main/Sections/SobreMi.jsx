@@ -2,7 +2,7 @@ import { ButtonLinks } from "./ButtonLinks";
 
 export function SobreMi() {
     return (
-        <section className="bg-sobremi pt-[100px] h-full" id="sobremi">
+        <section className="bg-sobremi h-full" id="sobremi">
             <div className="text-center mx-auto flex flex-col items-center">
                 <h2 className="text-3xl font-bold my-10">
                     Hola, soy
