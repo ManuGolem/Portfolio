@@ -2,7 +2,7 @@ import { ButtonLinks } from "./ButtonLinks";
 
 export function SobreMi() {
     return (
-        <section className="bg-sobremi h-full" id="sobremi">
+        <section className="bg-sobremi pt-[100px] h-full" id="sobremi">
             <div className="text-center mx-auto flex flex-col items-center">
                 <h2 className="text-3xl font-bold my-10">
                     Hola, soy
@@ -19,7 +19,7 @@ export function SobreMi() {
                 dedico tiempo a estudiar desarrollo web. Me encuentro en la
                 búsqueda de mi primera experiencia laboral.
             </p>
-            <div className="flex justify-center gap-5 my-10">
+            <div className="flex justify-center gap-5 my-30">
                 <ButtonLinks
                     img="./img/linkedin.png"
                     link="https://www.linkedin.com/in/manuel-carreras-b05414265/"
