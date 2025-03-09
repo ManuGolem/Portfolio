@@ -3,7 +3,7 @@ import { SobreMi } from "./Sections/SobreMi";
 
 export function Main() {
     return (
-        <main className="flex flex-col justify-center min-h-screen pt-[100px]">
+        <main className="flex flex-col gap-5 ">
             <SobreMi />
             <Proyectos />
         </main>
