@@ -6,9 +6,11 @@
 }
 
 @theme {
-    --color-fondo: #282828;
     --color-sobremi: #fbf1c7;
     --color-proyecto: #ebdbb2;
+    --color-skills: #d5c4a1;
+    --color-contacto: #bdae93;
+    --color-fondo: #a89984;
     --color-fondoOscuro: #1d2021;
     --color-naranja: #d65d0e;
     --color-aqua: #689d6a;
@@ -17,4 +19,8 @@
 
 * {
     font-family: "Excalifont", ui-sans-serif;
+}
+
+section {
+    padding-top: 100px;
 }
