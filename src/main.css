@@ -12,6 +12,7 @@
     --color-fondoOscuro: #1d2021;
     --color-naranja: #d65d0e;
     --color-aqua: #689d6a;
+    --color-fondo-header: rgba(40, 40, 40, 0.8);
 }
 
 * {
