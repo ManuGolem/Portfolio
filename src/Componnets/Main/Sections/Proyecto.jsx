@@ -15,6 +15,7 @@ export function Proyecto({ title, img, descriptionEs, descriptionEn, link }) {
             <img
                 className="rounded-2xl my-5 border-aqua-suave border-[6px] group-hover:border-aqua"
                 src={img}
+                alt={`screenshot of the proyect ${title}`}
             />
             <p className="px-8 text-xl group-hover:text-naranja">
                 {descriptionEs}
