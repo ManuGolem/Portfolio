@@ -11,6 +11,7 @@ export function SobreMi() {
                 <img
                     src="./img/yo.webp"
                     className="m-5 w-[20rem] rounded-[50%]"
+                    alt="a photo of me"
                 />
             </div>
             <p className="m-5 mx-[15rem] text-wrap text-2xl text-center">
