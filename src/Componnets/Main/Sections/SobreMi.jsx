@@ -1,11 +1,11 @@
 import { ButtonLinks } from "./ButtonLinks";
 
-export function SobreMi() {
+export function SobreMi({ textResumen }) {
     return (
         <section className="bg-sobremi h-full" id="sobremi">
             <div className="text-center mx-auto flex flex-col items-center">
                 <h2 className="text-3xl font-bold my-10">
-                    Hola, soy
+                    {textResumen.title}
                     <span className="text-aqua"> Manuel Carreras</span>
                 </h2>
                 <img
@@ -15,10 +15,7 @@ export function SobreMi() {
                 />
             </div>
             <p className="m-5 mx-[15rem] text-wrap text-2xl text-center">
-                Hola, me llamo Manuel Carreras. Soy estudiante de Ingeniería en
-                Computación en la Universidad de la República (UDELAR) y también
-                dedico tiempo a estudiar desarrollo web. Me encuentro en la
-                búsqueda de mi primera experiencia laboral.
+                {textResumen.parrafo}
             </p>
             <div className="flex justify-center gap-5 my-30">
                 <ButtonLinks
