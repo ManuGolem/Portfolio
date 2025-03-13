@@ -1,0 +1,96 @@
+{
+    "es": {
+        "buttonNavs": {
+            "sobremi": "Sobre mí",
+            "proyectos": "Proyectos",
+            "skills": "Habilidades",
+            "contacto": "Contacto"
+        },
+        "main": {
+            "resumen": {
+                "title": "Hola, soy",
+                "parrafo": "Hola, me llamo Manuel Carreras. Soy estudiante de Ingeniería en Computación en la Universidad de la República (UDELAR) y también dedico tiempo a estudiar desarrollo web. Me encuentro en la búsqueda de mi primera experiencia laboral."
+            },
+            "proyectos": {
+                "title": "Proyectos Personales",
+                "proyectos": [
+                    {
+                        "id": 0,
+                        "title": "Rest Api",
+                        "link": "https://manugolem.github.io/rest-countries-api-with-color-theme-switcher/",
+                        "img": "./img/rest.png",
+                        "parrafo": "Página que muestra información de todos los países, hecha con HTML, JS y CSS. Es mi solución al challenge de Frontend Mentor."
+                    },
+                    {
+                        "id": 1,
+                        "title": "Interactive Comments",
+                        "link": "https://manugolem.github.io/interactive-comments/",
+                        "img": "./img/interactive-comments.png",
+                        "parrafo": "Aplicación de comentarios interactivos hecha en React y TailwindCSS. Se pueden responder, borrar, editar y crear comentarios. Es mi solución al challenge de Frontend Mentor."
+                    },
+                    {
+                        "id": 2,
+                        "title": "Frontend Mentor Solution",
+                        "link": "https://manugolem.github.io/frontend-mentor-solutions/",
+                        "img": "./img/frontend.png",
+                        "parrafo": "Página sencilla diseñada para mostrar mis soluciones a los desafíos de Frontend Mentor, hecho con CSS y HTML."
+                    },
+                    {
+                        "id": 3,
+                        "title": "To do web",
+                        "link": "https://manugolem.github.io/ToDoWebReact/",
+                        "img": "./img/todoReact.png",
+                        "parrafo": "Página de lista de tareas (To-Do) desarrollada con React y Tailwind CSS."
+                    }
+                ]
+            }
+        }
+    },
+    "en": {
+        "buttonNavs": {
+            "sobremi": "About me",
+            "proyectos": "Projects",
+            "skills": "Skills",
+            "contacto": "Contact"
+        },
+        "main": {
+            "resumen": {
+                "title": "Hello, I'm",
+                "parrafo": "Hello, my name is Manuel Carreras. I'm a Computer Engineering student at the University of the Republic (UDELAR), and i also dedicate time to studying web development. I'm currently looking for my first work experience."
+            },
+            "proyectos": {
+                "title": "Personal Projects",
+                "proyectos": [
+                    {
+                        "id": 0,
+                        "title": "Rest Api",
+                        "link": "https://manugolem.github.io/rest-countries-api-with-color-theme-switcher/",
+                        "img": "./img/rest.png",
+                        "parrafo": "Page that displays information about all countries, made with HTML, JS, and CSS. It is my solution to the Frontend Mentor challenge."
+                    },
+                    {
+                        "id": 1,
+                        "title": "Interactive Comments",
+                        "link": "https://manugolem.github.io/interactive-comments/",
+                        "img": "./img/interactive-comments.png",
+                        "parrafo": "Interactive comment app built with React and TailwindCSS. Users can reply, delete, edit, and create comments. It's my solution to the Frontend Mentor challenge."
+                    },
+                    {
+                        "id": 2,
+                        "title": "Frontend Mentor Solution",
+                        "link": "https://manugolem.github.io/frontend-mentor-solutions/",
+                        "img": "./img/frontend.png",
+                        "parrafo": "A simple page designed to showcase my solutions to Frontend Mentor challenges, made with CSS and HTML."
+                    },
+                    {
+                        "id": 3,
+                        "title": "To do web",
+                        "link": "https://manugolem.github.io/ToDoWebReact/",
+                        "img": "./img/todoReact.png",
+                        "parrafo": "To-Do list page developed with React and Tailwind CSS."
+                    }
+                ]
+            }
+        }
+    }
+}
