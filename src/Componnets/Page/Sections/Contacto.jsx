@@ -41,36 +41,33 @@ export function Contacto({ text }) {
                     onSubmit={handleSubmit}
                     className="grid grid-cols-2 grid-row-3 gap-x-[40rem] gap-y-4"
                 >
-                    <label className="flex flex-col mr-[-3rem]">
+                    <label className="flex flex-col mr-[-3rem] hover:text-naranja">
                         {text.form.name}
-                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[4rem] mb-2"></hr>
                         <input
                             type="text"
                             name="name"
                             required
                             placeholder="Manu Golem"
-                            className="border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
+                            className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col row-start-2 row-end-3 mr-[-3rem]">
+                    <label className="flex flex-col row-start-2 row-end-3 mr-[-3rem] hover:text-naranja">
                         {text.form.email}
-                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[3rem] mb-2"></hr>
 
                         <input
                             type="email"
                             name="email"
                             placeholder="email@gmail.com"
                             required
-                            className="border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
+                            className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem]">
+                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem] hover:text-naranja">
                         {text.form.mensaje}
-                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[6rem] mb-2"></hr>
                         <textarea
                             name="message"
                             required
-                            className="resize-none border-aqua-suave border-2 outline-none rounded-[8px] px-2 h-full mb-4 focus:border-aqua focus:border-[3px]"
+                            className="text-black resize-none border-aqua-suave border-2 outline-none rounded-[8px] px-2 h-full mb-4 focus:border-aqua focus:border-[3px]"
                         ></textarea>
                     </label>
                     <button

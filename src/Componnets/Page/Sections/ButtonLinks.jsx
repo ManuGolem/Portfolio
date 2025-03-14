@@ -12,7 +12,7 @@ export function ButtonLinks({ img, link, dw }) {
 }
 export function BotonesContacto() {
     return (
-        <div className="flex justify-center gap-5 mt-30">
+        <div className="flex justify-center gap-5 mt-28">
             <ButtonLinks
                 img="./img/linkedin.png"
                 link="https://www.linkedin.com/in/manuel-carreras-b05414265/"
