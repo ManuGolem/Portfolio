@@ -43,7 +43,7 @@ export function Contacto({ text }) {
                 >
                     <label className="flex flex-col mr-[-3rem]">
                         {text.form.name}
-                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[3rem] mb-2"></hr>
+                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[4rem] mb-2"></hr>
                         <input
                             type="text"
                             name="name"
@@ -66,7 +66,7 @@ export function Contacto({ text }) {
                     </label>
                     <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem]">
                         {text.form.mensaje}
-                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[7rem] mb-2"></hr>
+                        <hr className="h-[3px] bg-naranja text-naranja rounded-2xl w-[6rem] mb-2"></hr>
                         <textarea
                             name="message"
                             required
