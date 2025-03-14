@@ -1,5 +1,5 @@
 import { Header } from "./Componnets/Header/Header";
-import { Main } from "./Componnets/Main/Main";
+import { Page } from "./Componnets/Page/Page";
 import { Footer } from "./Componnets/Footer";
 import { useState } from "react";
 import data from "./text.json";
@@ -16,7 +16,7 @@ export function App() {
                 idioma={es}
                 funcion={handleIdioma}
             />
-            <Main textMain={es ? data.es.main : data.en.main} />
+            <Page textMain={es ? data.es.main : data.en.main} />
             <Footer />
         </>
     );

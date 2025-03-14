@@ -43,6 +43,18 @@
                         "parrafo": "Página de lista de tareas (To-Do) desarrollada con React y Tailwind CSS."
                     }
                 ]
+            },
+            "skills": "Herramientas y tecnologías",
+            "contacto": {
+                "title": "Contáctame",
+                "form": {
+                    "name": "Nombre",
+                    "email": "Email",
+                    "mensaje": "Tu mensaje",
+                    "send": "Enviar",
+                    "ok": "Mensaje enviado correctamente",
+                    "nok": "Hubo un error, intente mas tarde"
+                }
             }
         }
     },
@@ -90,6 +102,18 @@
                         "parrafo": "To-Do list page developed with React and Tailwind CSS."
                     }
                 ]
+            },
+            "skills": "Tools and Technologies",
+            "contacto": {
+                "title": "Contact me",
+                "form": {
+                    "name": "Name",
+                    "email": "Email",
+                    "mensaje": "Your message",
+                    "send": "Send",
+                    "ok": "Message sent successfully",
+                    "nok": "There was an error, please try again later."
+                }
             }
         }
     }

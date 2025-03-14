@@ -1,10 +1,10 @@
-export function Skills() {
+export function Skills({ textTitle }) {
     const classImagen =
         "w-20 p-4 hover:scale-[1.2] hover:bg-naranja hover:rounded-2xl hover:cursor-pointer transition-all ease-in-out";
     return (
         <section id="skills" className="bg-skills">
             <h1 className="text-center mt-5 text-3xl font-bold text-aqua">
-                Herramientas y tecnologias
+                {textTitle}
             </h1>
             <hr className="h-[4px] bg-naranja text-naranja rounded-2xl w-[26rem] mx-auto"></hr>
             <div className="flex gap-4 justify-center my-10 ">

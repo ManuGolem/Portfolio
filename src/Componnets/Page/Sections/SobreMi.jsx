@@ -1,4 +1,4 @@
-import { ButtonLinks } from "./ButtonLinks";
+import { BotonesContacto } from "./ButtonLinks";
 
 export function SobreMi({ textResumen }) {
     return (
@@ -17,21 +17,7 @@ export function SobreMi({ textResumen }) {
             <p className="m-5 mx-[15rem] text-wrap text-2xl text-center">
                 {textResumen.parrafo}
             </p>
-            <div className="flex justify-center gap-5 my-30">
-                <ButtonLinks
-                    img="./img/linkedin.png"
-                    link="https://www.linkedin.com/in/manuel-carreras-b05414265/"
-                />
-                <ButtonLinks
-                    img="./img/github-mark.png"
-                    link="https://github.com/ManuGolem"
-                />
-                <ButtonLinks
-                    img="./img/download-arrow-down.svg"
-                    link="../CVManuelCarreras-Es.pdf"
-                    dw={true}
-                />
-            </div>
+            <BotonesContacto />
         </section>
     );
 }
