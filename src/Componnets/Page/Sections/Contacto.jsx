@@ -41,7 +41,7 @@ export function Contacto({ text }) {
                     onSubmit={handleSubmit}
                     className="grid grid-cols-2 grid-row-3 gap-x-[40rem] gap-y-4"
                 >
-                    <label className="flex flex-col mr-[-3rem] hover:text-naranja">
+                    <label className="flex flex-col mr-[-3rem] has-focus:text-naranja">
                         {text.form.name}
                         <input
                             type="text"
@@ -51,7 +51,7 @@ export function Contacto({ text }) {
                             className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col row-start-2 row-end-3 mr-[-3rem] hover:text-naranja">
+                    <label className="flex flex-col row-start-2 row-end-3 mr-[-3rem] has-focus:text-naranja">
                         {text.form.email}
 
                         <input
@@ -62,7 +62,7 @@ export function Contacto({ text }) {
                             className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem] hover:text-naranja">
+                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem] has-focus:text-naranja">
                         {text.form.mensaje}
                         <textarea
                             name="message"
