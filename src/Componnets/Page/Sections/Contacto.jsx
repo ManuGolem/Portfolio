@@ -32,26 +32,26 @@ export function Contacto({ text }) {
 
     return (
         <section id="contacto" className="bg-contacto">
-            <h1 className="text-center mt-5 text-3xl font-bold text-aqua">
+            <h1 className="text-center mt-5 md:text-3xl text-2xl font-bold text-aqua">
                 {text.title}
             </h1>
             <hr className="h-[4px] bg-naranja text-naranja rounded-2xl w-[10rem] mx-auto"></hr>
             <div className="flex flex-col my-10 justify-center mx-20">
                 <form
                     onSubmit={handleSubmit}
-                    className="grid grid-cols-2 grid-row-3 gap-x-[40rem] gap-y-4"
+                    className="flex flex-col justify-center md:grid md:grid-cols-2 md:grid-row-3 md:gap-x-[40rem] md:gap-y-4"
                 >
-                    <label className="flex flex-col mr-[-3rem] has-focus:text-naranja">
+                    <label className="flex flex-col md:mr-[-3rem] has-focus:text-naranja">
                         {text.form.name}
                         <input
                             type="text"
                             name="name"
                             required
                             placeholder="Manu Golem"
-                            className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
+                            className="text-[12px] md:text-[1rem] text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col row-start-2 row-end-3 mr-[-3rem] has-focus:text-naranja">
+                    <label className="flex flex-col row-start-2 row-end-3 md:mr-[-3rem] has-focus:text-naranja">
                         {text.form.email}
 
                         <input
@@ -59,21 +59,21 @@ export function Contacto({ text }) {
                             name="email"
                             placeholder="email@gmail.com"
                             required
-                            className="text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
+                            className="text-[12px] md:text-[1rem] text-black border-aqua-suave border-2 outline-none rounded-[8px] px-2 focus:border-aqua focus:border-[3px]"
                         />
                     </label>
-                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 ml-[-35rem] has-focus:text-naranja">
+                    <label className="flex flex-col col-start-2 col-end-3 row-span-3 md:ml-[-35rem] has-focus:text-naranja">
                         {text.form.mensaje}
                         <textarea
                             name="message"
                             required
-                            className="text-black resize-none border-aqua-suave border-2 outline-none rounded-[8px] px-2 h-full mb-4 focus:border-aqua focus:border-[3px]"
+                            className="text-[12px] md:text-[1rem] text-black resize-none border-aqua-suave border-2 outline-none rounded-[8px] px-2 h-full mb-4 focus:border-aqua focus:border-[3px]"
                         ></textarea>
                     </label>
                     <button
                         type="submit"
                         value="Send"
-                        className="hover:bg-naranja hover:cursor-pointer hover:rounded-2xl mx-auto px-4 py-2 col-span-2 hover:font-bold hover:scale-[1.1]"
+                        className="hover:bg-naranja hover:cursor-pointer hover:rounded-2xl mx-auto px-4 py-2 col-span-2 hover:font-bold hover:scale-[1.1] bg-naranja rounded-2xl md:bg-transparent md:rounded-none"
                     >
                         {text.form.send}
                     </button>

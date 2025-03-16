@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonNav } from "./ButtonNav";
-export function Modal({ idioma, textButtons, funcion }) {
-    const [clasesModal, setClasesModal] = useState(
-        "bg-fondo-header absolute top-[100px] right-0 w-[100vw] text-center",
-    );
+export function Modal({ idioma, textButtons, funcion, abrir, cerrar }) {
+    const [clasesModal, setClasesModal] = useState("hidden");
     function cerrarModal() {
-        setClasesModal(clasesModal.concat(" ", "hidden"));
+        setClasesModal("hidden");
+        cerrar();
     }
+    useEffect(() => {
+        abrir &&
+            setClasesModal(
+                "bg-fondo-header absolute top-[100px] right-0 w-[100vw] text-center backdrop-blur-[5px] block",
+            );
+    }, [abrir]);
     return (
         <div className={clasesModal}>
             <nav>

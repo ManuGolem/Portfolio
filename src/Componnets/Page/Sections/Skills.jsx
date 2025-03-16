@@ -1,13 +1,13 @@
 export function Skills({ textTitle }) {
     const classImagen =
-        "w-20 p-4 hover:scale-[1.2] hover:bg-naranja hover:rounded-2xl hover:cursor-pointer transition-all ease-in-out";
+        "md:w-20 w-15 md:p-4 p-2 hover:scale-[1.2] hover:bg-naranja hover:rounded-2xl hover:cursor-pointer transition-all ease-in-out ";
     return (
         <section id="skills" className="bg-skills">
-            <h1 className="text-center mt-5 text-3xl font-bold text-aqua">
+            <h1 className="text-center mt-5 md:text-3xl text-2xl font-bold text-aqua">
                 {textTitle}
             </h1>
-            <hr className="h-[4px] bg-naranja text-naranja rounded-2xl w-[26rem] mx-auto"></hr>
-            <div className="flex gap-4 justify-center my-10 ">
+            <hr className="h-[4px] bg-naranja text-naranja rounded-2xl md:w-[26rem] w-[20rem] mx-auto"></hr>
+            <div className="flex md:flex-row flex-col gap-4 justify-center my-10 items-center">
                 <img
                     src="./img/html5.svg"
                     className={classImagen}
