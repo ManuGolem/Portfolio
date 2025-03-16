@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Excalifont";
-    src: url("Excalifont-Regular.woff2");
+    src: url("/Excalifont-Regular.woff2");
 }
 
 @theme {
@@ -19,7 +19,7 @@
 }
 
 * {
-    font-family: "Excalifont-Regular", ui-sans-serif;
+    font-family: "Excalifont", ui-sans-serif;
 }
 
 section {
