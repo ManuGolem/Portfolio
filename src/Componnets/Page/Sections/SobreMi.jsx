@@ -17,7 +17,7 @@ export function SobreMi({ textResumen }) {
             <p className="my-12  md:mx-[15rem] mx-[1rem] md:text-wrap md:text-[22px] text-[14px] text-center">
                 {textResumen.parrafo}
             </p>
-            <BotonesContacto />
+            <BotonesContacto texto={textResumen.modalCv} />
         </section>
     );
 }

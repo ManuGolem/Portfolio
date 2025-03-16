@@ -9,7 +9,12 @@
         "main": {
             "resumen": {
                 "title": "Hola, soy",
-                "parrafo": "Hola, me llamo Manuel Carreras. Soy estudiante de Ingeniería en Computación en la Universidad de la República (UDELAR) y también dedico tiempo a estudiar desarrollo web. Me encuentro en la búsqueda de mi primera experiencia laboral."
+                "parrafo": "Hola, me llamo Manuel Carreras. Soy estudiante de Ingeniería en Computación en la Universidad de la República (UDELAR) y también dedico tiempo a estudiar desarrollo web. Me encuentro en la búsqueda de mi primera experiencia laboral.",
+                "modalCv": {
+                    "title": "Selecione la versión",
+                    "spanish": "Español",
+                    "ingles": "Inglés"
+                }
             },
             "proyectos": {
                 "title": "Proyectos Personales",
@@ -68,7 +73,12 @@
         "main": {
             "resumen": {
                 "title": "Hello, I'm",
-                "parrafo": "Hello, my name is Manuel Carreras. I'm a Computer Engineering student at the University of the Republic (UDELAR), and i also dedicate time to studying web development. I'm currently looking for my first work experience."
+                "parrafo": "Hello, my name is Manuel Carreras. I'm a Computer Engineering student at the University of the Republic (UDELAR), and i also dedicate time to studying web development. I'm currently looking for my first work experience.",
+                "modalCv": {
+                    "title": "Select the version",
+                    "spanish": "Spanish",
+                    "ingles": "English"
+                }
             },
             "proyectos": {
                 "title": "Personal Projects",
