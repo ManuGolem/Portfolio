@@ -6,12 +6,9 @@ export function Footer() {
         });
     }
     return (
-        <footer className="text-center bg-fondo py-5">
-            <h1
-                className="text-naranja hover:scale-[1.1] hover:cursor-pointer"
-                onClick={rederigir}
-            >
-                <span className="text-aqua">&lt;/ </span>
+        <footer className="text-center bg-fondo md:py-5 py-2">
+            <h1 className="text-naranja hover:scale-[1.1] hover:cursor-pointer md:text-xl font-bold" onClick={rederigir}>
+                <span className="text-aqua ">&lt;/ </span>
                 Manuel Carreras
                 <span className="text-aqua"> &gt;</span>
             </h1>

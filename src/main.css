@@ -8,14 +8,15 @@
 @theme {
     --color-sobremi: #fbf1c7;
     --color-proyecto: #ebdbb2;
-    --color-skills: #d5c4a1;
-    --color-contacto: #bdae93;
-    --color-fondo: #a89984;
+    --color-skills: #fbf1c7;
+    --color-contacto: #ebdbb2;
+    --color-fondo: #1d2021;
     --color-fondoOscuro: #1d2021;
     --color-naranja: #d65d0e;
     --color-aqua: #689d6a;
     --color-aqua-suave: #8ec07c;
     --color-fondo-header: rgba(40, 40, 40, 0.8);
+    --color-red: #cc241d;
 }
 
 * {
@@ -25,4 +26,8 @@
 
 section {
     padding-block: 100px;
+}
+
+#contacto {
+    padding-block: 25px;
 }
