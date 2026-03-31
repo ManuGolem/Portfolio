@@ -8,7 +8,7 @@ export function Contacto({ text }) {
         if (cargando) return;
         setCargando(true);
 
-        const fromData = new FormData(e.target);
+        const formData = new FormData(e.target);
         const data = {
             name: formData.get("name"),
             email: formData.get("email"),
