@@ -1,33 +1,48 @@
 import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 export function Contacto({ text }) {
-    const key = import.meta.env.VITE_PUBLIC_KEY_EMAIL;
-    const serviceID = import.meta.env.VITE_SERVICE_ID;
-    const formID = import.meta.env.VITE_TEMPLATE_ID;
-    useEffect(() => {
-        emailjs.init({
-            publicKey: key,
-        });
-    }, []);
     const [enviado, setEnviado] = useState();
-    function handleSubmit(e) {
+    const [cargando, setCargando] = useState(false);
+
+    async function handleSubmit(e) {
         e.preventDefault();
-        emailjs.sendForm(serviceID, formID, e.target).then(
-            () => {
+        if (cargando) return;
+        setCargando(true);
+
+        const fromData = new FormData(e.target);
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+        };
+
+        try {
+            //Seria lo de vercel
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
                 setEnviado(true);
                 setTimeout(() => {
                     setEnviado();
                     e.target.reset();
+                    setCargando(false);
                 }, 2000);
-            },
-            (error) => {
-                setEnviado(false);
-                setTimeout(() => {
-                    setEnviado(true);
-                }, 2000);
-                setError(error);
-            },
-        );
+            } else {
+                throw new Error("Error al enviar");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            setEnviado(false);
+            setTimeout(() => {
+                setEnviado();
+                setCargando(false);
+            }, 2000);
+        }
     }
 
     return (
@@ -70,10 +85,11 @@ export function Contacto({ text }) {
                     </label>
                     <button
                         type="submit"
+                        disabled={cargando}
                         value="Send"
                         className="hover:bg-naranja md:text-[1.25rem] hover:cursor-pointer hover:rounded-2xl mx-auto px-4 py-2 col-span-2 hover:font-bold hover:scale-[1.1] bg-naranja rounded-2xl md:bg-transparent md:rounded-none"
                     >
-                        {text.form.send}
+                        {cargando ? "Enviando..." : text.form.send}
                     </button>
                 </form>
                 {enviado === true ? (
