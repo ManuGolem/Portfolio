@@ -22,11 +22,11 @@ export default async function handler(req, res) {
                 },
             }),
         });
-
+        const text = await response.text(); //Para el error
         if (response.ok) {
             return res.status(200).json({ success: true });
         } else {
-            return res.status(500).json({ error: "Error al enviar el email" });
+            return res.status(500).json({ error: text });
         }
     } catch (error) {
         console.error("Error:", error);
