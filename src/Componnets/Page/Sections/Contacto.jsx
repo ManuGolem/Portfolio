@@ -24,7 +24,14 @@ export function Contacto({ text }) {
                 },
                 body: JSON.stringify(data),
             });
+            const result = await response.json(); // 👈 importante
 
+            if (response.ok) {
+                setEnviado(true);
+            } else {
+                console.error(result); // 👈 MOSTRAR ERROR REAL
+                throw new Error(result.error || "Error al enviar");
+            }
             if (response.ok) {
                 setEnviado(true);
                 setTimeout(() => {
