@@ -16,8 +16,8 @@ export default async function handler(req, res) {
                 template_id: process.env.TEMPLATE_ID,
                 user_id: process.env.PUBLIC_KEY,
                 template_params: {
-                    from_name: name,
-                    from_email: email,
+                    name: name,
+                    email: email,
                     message: message,
                 },
             }),
